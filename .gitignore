@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+build/
+frontend/dist/
+
+# Environment files
+.env
+**/.env
+!.env.example
+!**/.env.example
+
+# Uploads (user-submitted crop photos)
+backend/uploads/crop-photos/*
+!backend/uploads/crop-photos/.gitkeep
+
+# Python
+ml-service/__pycache__/
+ml-service/**/__pycache__/
+ml-service/.venv/
+*.pyc
+
+# OS / editor
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+*.log
